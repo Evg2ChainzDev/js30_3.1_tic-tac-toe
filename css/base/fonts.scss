@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Merriweather';
+    src: url("../assets/fonts/Merriweather/Merriweather-Regular.ttf");
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../assets/fonts/Inter/static/Inter-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url("../assets/fonts/Inter/static/Inter-Bold.ttf");
+    font-weight: 700;
+  }
+
+html {
+    font-size: 10px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--gld);
+}
+
+h1 {
+  font-family:'Merriweather';
+  font-size: 6rem;
+}
+
+.section-title-wrapper {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-title-wrapper {
+padding: 82px 0 50px 0;
+}
+
+h2 {
+  font-family:'Merriweather';
+  font-size: 4rem;
+  color:var(--gld);
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  width: calc(50% - 75px);
+  height: 0px; 
+  border: 1px solid var(--gld);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0px;
+  width: calc(50% - 75px);
+  height: 0px; 
+  border: 1px solid var(--gld);
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family:'Merriweather';
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-family:'Merriweather';
+  font-weight: bold;
+  color: var(--gld) ;
+}
+
+p {
+  line-height: 4rem;
+}
+
+span {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+}

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+  background-color: var(--blk);
+  height: 100vh;
+}
+
+
+:root {
+  --gld: #bdae82;
+  --blk: #000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+

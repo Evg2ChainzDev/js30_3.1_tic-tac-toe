@@ -1,0 +1,12 @@
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 60px;
+}
+
+header .active-lang {
+    color: var(--gld);
+}

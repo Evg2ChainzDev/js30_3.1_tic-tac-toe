@@ -1,0 +1,35 @@
+.button-gld {
+    display: block;
+    width: 220px;
+    height: 55px;
+    background-color: var(--gld);
+    color: black;
+    text-align: center;
+    align-items: center;
+    padding: 13px 0 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    border:  0px;
+}
+
+.button-gld:hover {
+    color: white;
+}
+
+.button-trn {
+    display: block;
+    width: 220px;
+    height: 55px;
+    background-color: transparent;
+    color: var(--gld);
+    text-align: center;
+    align-items: center;
+    padding: 13px 0 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px var(--gld) solid;
+}
+
+.button-trn:hover {
+    color: white;
+}

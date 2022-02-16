@@ -1,0 +1,177 @@
+main {
+    height: calc(100vh - 120px);
+    background-color: darkgrey;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start ;
+}
+
+.items-container {
+  display: flex;
+  width: 306px;
+  border: 1px solid black;
+  height: 306px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: pointer;
+  padding: 1px 1px 0 1px;
+
+  min-width:306px;
+  position: relative;
+}
+
+.button-container {
+  height: 20%;
+  padding-top: 5%;
+}
+
+.game-title {
+  height: 20%;
+  padding-top: 5%;
+}
+
+.game-item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  transition: linear 0.4s;
+  font-size: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.game-item__hover-available:hover {
+  background-color: #ccc;
+  }
+
+.x {
+  background-color:rgb(207, 253, 238)
+}
+
+.o {
+  background-color:rgb(253, 208, 207)
+}
+
+.reset-game {
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.side-container {
+  width: calc( 50vw - 250px );
+  // border: 1px solid black;
+  padding: 0px;
+  height: 306px;
+}
+
+.side-container {
+  margin: 0px;
+  text-align: left;
+  padding-left: calc(10px + 3%);
+}
+
+.big-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.last-results-container {
+  padding-top: 10px;
+}
+
+.result {
+  font-size: 16px;
+}
+// -------- lines -----------
+.line {
+  position: absolute;
+  height: 4px;
+  width: 270px;
+  background-color: rgba(170, 153, 253, 0.7);
+  content: "";
+  border-radius: 2px;
+  border: 0px ;
+  transition: linear 0.4s;
+  display: none;
+}
+
+.line-1 {
+  top:49px;
+}
+
+.line-2 {
+  top:148px;
+  left:-83px;
+  transform: rotate(90deg);
+}
+
+.line-3 {
+  top:148px;
+  transform: rotate(45deg);
+  width: 370px;
+}
+
+.line-4 {
+  top:148px;
+  transform: rotate(90deg);
+}
+
+.line-5 {
+  top:148px;
+  left:118px;
+  transform: rotate(90deg);
+}
+
+.line-6 {
+  top:148px;
+  transform: rotate(-45deg);
+  width: 370px;
+}
+
+.line-7 {
+  top:150px;
+}
+
+.line-8 {
+  top:252px;
+}
+
+.line-visible {
+  display:block;
+  opacity: 0;
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+//-------- firewarks start -------------
+// body{
+//   // background: transparent;
+//   overflow:hidden;
+//   margin:0;
+// }
+
+// main {
+//   position: relative;
+// }
+
+// .firewarks {
+//   position: absolute;
+// }
+
+// canvas{
+//   // background:transparent;
+// }
+
+//-------- firewarks end -------------
