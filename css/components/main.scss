@@ -25,13 +25,14 @@ main {
 }
 
 .button-container {
-  height: 20%;
-  padding-top: 5%;
+  // height: 20%;
+  padding-top: 20px;
 }
 
 .game-title {
-  height: 20%;
+  min-height: 90px;
   padding-top: 5%;
+  margin-bottom: 10px;
 }
 
 .game-item {
@@ -63,6 +64,12 @@ main {
   padding: 10px 20px;
   cursor: pointer;
   border: 0px;
+  transition: 00.3s;
+}
+
+.reset-game:hover {
+  background-color: rgb(212, 167, 255);
+  border: 0px;
 }
 
 .side-container {
@@ -70,6 +77,7 @@ main {
   // border: 1px solid black;
   padding: 0px;
   height: 306px;
+  min-width: 200px;
 }
 
 .side-container {

@@ -9,6 +9,16 @@
     width: 188px;
 }
 
+.footer-container__rs-school {
+  transition: 0.3s;
+}
+
+.footer-container__rs-school:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    cursor: pointer;
+}
+
 .footer-container__smm {
     width: 188px;
     height: 50px;
@@ -33,20 +43,6 @@
       cursor: pointer;
   }
 
-.smm__inst {
-    background-image: url('../assets/svg/inst.svg');
-  }
 
-.smm__fb {
-    background-image: url('../assets/svg/fb.svg');
-  }
-
-.smm__tw {
-    background-image: url('../assets/svg/tw.svg');
-  }
-
-.smm__pinterest {
-    background-image: url('../assets/svg/pinterest.svg');
-  }
 
   

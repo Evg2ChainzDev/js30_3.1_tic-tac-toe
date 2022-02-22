@@ -63,7 +63,9 @@ function allResultsUpdates (Draw) {
 function addLastResultToArray (Draw) {
       let nowHours = new Date().getHours()
       let nowMinutes = new Date().getMinutes()
+      nowMinutes = (nowMinutes<10)?("0"+nowMinutes):nowMinutes;
       let nowSeconds = new Date().getSeconds()
+      nowSeconds = (nowSeconds<10)?("0"+nowSeconds):nowSeconds;
       let noDrawRes = [player,stepCount,nowHours,nowMinutes,nowSeconds]
       let DrawRes = ['Ничья',,nowHours,nowMinutes,nowSeconds]
       let result = Draw?DrawRes:noDrawRes

@@ -548,13 +548,13 @@ main {
 }
 
 .button-container {
-  height: 20%;
-  padding-top: 5%;
+  padding-top: 20px;
 }
 
 .game-title {
-  height: 20%;
+  min-height: 90px;
   padding-top: 5%;
+  margin-bottom: 10px;
 }
 
 .game-item {
@@ -586,12 +586,19 @@ main {
   padding: 10px 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
+}
+
+.reset-game:hover {
+  background-color: #d4a7ff;
+  border: 0px;
 }
 
 .side-container {
   width: calc(50vw - 250px);
   padding: 0px;
   height: 306px;
+  min-width: 200px;
 }
 
 .side-container {
@@ -691,6 +698,15 @@ main {
   width: 188px;
 }
 
+.footer-container__rs-school {
+  transition: 0.3s;
+}
+
+.footer-container__rs-school:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  cursor: pointer;
+}
+
 .footer-container__smm {
   width: 188px;
   height: 50px;
@@ -712,22 +728,6 @@ main {
 .svg-ico:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
   cursor: pointer;
-}
-
-.smm__inst {
-  background-image: url("../assets/svg/inst.svg");
-}
-
-.smm__fb {
-  background-image: url("../assets/svg/fb.svg");
-}
-
-.smm__tw {
-  background-image: url("../assets/svg/tw.svg");
-}
-
-.smm__pinterest {
-  background-image: url("../assets/svg/pinterest.svg");
 }
 
 .burger {
